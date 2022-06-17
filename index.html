@@ -1,674 +1,674 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Curriculum Vitæ</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
+	/* cspell:disable-file */
+	/* webkit printing magic: print all background colors */
+	html {
+		-webkit-print-color-adjust: exact;
 	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
+	* {
+		box-sizing: border-box;
+		-webkit-print-color-adjust: exact;
 	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	text-indent: -1.7em;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
 	
-</style></head><body><article id="8215c0e5-ba69-4863-af3e-3d3e2d5d05e3" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1457195740896-7f345efef228?ixlib=rb-1.2.1&amp;q=80&amp;cs=tinysrgb&amp;fm=jpg&amp;crop=entropy" style="object-position:center 40.88%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🧙🏽‍♂️</span></div><h1 class="page-title"><strong>Curriculum Vitæ</strong></h1></header><div class="page-body"><blockquote id="40d97753-cf85-4676-a68d-544749f8f1d8" class=""><strong>Software Engineer </strong>basé à <strong>Paris </strong>🗼 
-Actuellement en dernière année à l’<strong>É</strong>cole <strong>S</strong>upérieure d’<strong>I</strong>ngénieurs <strong>P</strong>aris-<strong>E</strong>st  
-Formation ingénieur informatique - option développement logiciel.</blockquote><h1 id="1a2affd1-4ce0-4eae-9f81-30f48a4df91b" class="">☎️ Informations de contact</h1><p id="d5eaa269-49bc-4ae8-98a9-bb5a3ed9e681" class="">📞 06 52 34 74 79</p><p id="b516f84f-19e6-4ada-af62-8f4bfb7ec246" class="">📧 guillemaudyann@gmail.com</p><p id="3226d2e9-15b3-4488-b32b-6f8fc24fdadb" class="">🔗 <a href="https://www.linkedin.com/in/yannguillemaud/">https://www.linkedin.com/in/yannguillemaud/</a></p><p id="37268819-4dd7-4b89-8fdf-c1de6265b19f" class="">
-</p><hr id="ed3c38aa-5ab0-405c-811a-6f92523c13a9"/><h1 id="a794fa28-4397-4dba-a91b-c69394a9df8a" class="">🎓 Diplômes</h1><h2 id="d8e13c34-6681-4d1c-9961-6cac53f5c6cc" class="">Diplôme d’Ingénieur Informatique - Spé Logiciel</h2><p id="9f7ec741-277d-4c0a-9d85-6eeb681dc590" class=""><em><mark class="highlight-gray">ESIPE - Marne-la-Vallée, 2019-2022</mark></em></p><h2 id="2dabd82d-11bd-42b9-8ace-f87ab5f618ff" class="">Diplôme Universitaire Technologique Informatique</h2><p id="39888909-5402-4b42-9672-1e2e21534ced" class=""><em><mark class="highlight-gray">Université de Bourgogne - Dijon, 2017-2019</mark></em></p><h2 id="9bceb9cc-e235-4725-bd35-5579a42ed0a7" class="">Baccalauréat STI2D - Systèmes Informatiques et Numériques</h2><p id="4280ab3c-a8e5-4631-95ad-43aada5b61d2" class=""><em><mark class="highlight-gray">Saint Joseph - Dijon, 2015-2017</mark></em></p><hr id="2a2ff900-39cb-434c-abab-6201a0a6fe13"/><h1 id="5ba68570-560d-4825-ad64-3891680a46d1" class="">🧑🏻‍🎓<strong> Expérience professionnelle</strong></h1><h2 id="42c7c9fd-08fe-4bd6-90ba-082c5de0ede5" class=""><details open=""><summary>Apprenti Ingénieur Développement</summary></details></h2><div class="indented"><p id="4f299125-8119-400c-a933-6b9e0b9f92f4" class=""><mark class="highlight-gray"><strong><em>Infocube</em></strong></mark><mark class="highlight-gray"><em>, Paris – (Sept 2019 - En cours)</em></mark></p><p id="263c8236-c978-4f40-84eb-54246129b403" class="">Alternance effectuée dans le cadre de mon diplôme d&#x27;ingénieur informatique.</p><p id="2e1ad3cb-0cf8-4336-9d81-6141a5b11aca" class="">Réalisation des missions suivantes:</p><ul id="5f21274e-d1aa-4f8f-9e03-e7ff694e0389" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">Refonte des applications de l&#x27;entreprise</mark></li></ul><ul id="cd713186-4974-4768-abb3-b9dc030a0a49" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">Modification des sites clients</mark></li></ul><ul id="218867a8-689b-4700-93eb-4f9efce2013e" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">Automatisation des process internes (ticketing, support)</mark></li></ul><p id="11730b02-abcc-4b04-8c89-4378e9682dd4" class="">Environnements, frameworks, langages utilisés:</p><ul id="94c91627-8843-4909-a31f-71e372c9869b" class="bulleted-list"><li style="list-style-type:disc">.NET - C#, EntityFramework</li></ul><ul id="c93b9918-ba5b-44cc-901b-8ce8d848bddc" class="bulleted-list"><li style="list-style-type:disc">Microsoft SQL Server</li></ul><ul id="9fa5b97d-a8cf-4035-971e-1b8d2ce01f92" class="bulleted-list"><li style="list-style-type:disc">Node - JavaScript</li></ul><ul id="e137f962-0605-482d-b174-5e356b9b3525" class="bulleted-list"><li style="list-style-type:disc">WordPress - PHP</li></ul><ul id="15161fbc-799e-4135-99d8-4d19d1fa2fe1" class="bulleted-list"><li style="list-style-type:disc">AzureDevOps, PowerAutomate, PowerApp</li></ul></div><h2 id="ef2ff909-b79f-40d0-9cac-cf874aaedefd" class=""><details open=""><summary>Stagiaire développeur</summary></details></h2><div class="indented"><p id="59181dd0-a874-4c96-9d2f-27664db32d48" class=""><strong><mark class="highlight-gray"><em>CIAD Lab</em></mark></strong><mark class="highlight-gray"><em>, Dijon – (Mars 2019 - Juin 2019)</em></mark></p><p id="684a00a3-7742-4b1f-855d-126262976620" class="">Stage réalisé dans le cadre de mon DUT Informatique à Dijon en tant que développeur dans le CIAD, laboratoire de <strong>C</strong>onnaissances et <strong>I</strong>ntelligences <strong>A</strong>rtificielles <strong>D</strong>istribuées.</p><ul id="c2b98ce0-31b2-411c-8cac-7affed2b8929" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">Conception et développement d&#x27;une application web permettant le requêtage graphique de données sur des ontologies.</mark></li></ul><p id="59b113f3-31a3-40f6-8d3c-0f7a2230ce43" class="">Environnements, frameworks, langages utilisés:</p><ul id="f95c9938-f615-4a43-b89c-5cdccadc0150" class="bulleted-list"><li style="list-style-type:disc">Node, Angular, JavaScript &amp; TypeScript</li></ul><ul id="d5b94236-8624-4b71-8c60-beeaa3544f9e" class="bulleted-list"><li style="list-style-type:disc">SPARQL</li></ul><ul id="45d5bada-970b-409c-ac70-2067ceda1268" class="bulleted-list"><li style="list-style-type:disc">Swagger</li></ul></div><hr id="b7b591bf-9d8b-4a51-a107-2e2208fc9b20"/><h1 id="029169e3-5241-4a3e-afb0-0fcf3441c20c" class="">🛠 Compétences</h1><p id="e01f9400-1379-458d-9b94-51f66119377f" class="">Liste non exhaustive, évidemment. :) </p><h2 id="50025bdd-4534-472f-bdfd-93c9d5b43346" class=""><details open=""><summary>💻 Technologies</summary></details></h2><div class="indented"><h3 id="d7a1a0de-78d6-445c-aafc-087a14d712ed" class=""><details open=""><summary>Java</summary></details></h3><div class="indented"><p id="d7d08706-d955-46b6-8c2c-2703ce4a91de" class="">Langage de prédilection: appris et utilisé depuis mes débuts en informatique, c’est par ce langage qu’une majorité de mes connaissances en développement logiciel ont été assimilées:</p><ul id="e032ff54-6829-4d76-b4bb-11a16776f13f" class="bulleted-list"><li style="list-style-type:square">Conception Orientée Objet et Design Patterns, </li></ul><ul id="3ce98931-c50f-4f5c-b1b9-bb1fb79d8b75" class="bulleted-list"><li style="list-style-type:disc">Généricité,</li></ul><ul id="a1e3876b-c1ea-4442-8527-e78ef195f17c" class="bulleted-list"><li style="list-style-type:disc">Reflection, </li></ul><ul id="f0f65e4a-b717-4012-9385-71a9856a07a9" class="bulleted-list"><li style="list-style-type:disc">Concurrence / Parallelisme / Vectorisation </li></ul><ul id="ca52e0d8-9acd-4276-a7a2-8271d0b85d4b" class="bulleted-list"><li style="list-style-type:disc">Memory Model et Générations</li></ul><ul id="867e33a8-a3ff-4dd0-80e5-3373309564fa" class="bulleted-list"><li style="list-style-type:disc">…</li></ul><p id="49c85023-ca5e-4b5b-b317-1ff601a1fd46" class="">Les frameworks suivant ont également été appris et utilisés avec Java:</p><ul id="dfeaccc3-20f3-44f0-a2c8-b02c04661e2c" class="bulleted-list"><li style="list-style-type:disc">Quarkus &amp; Spring</li></ul><ul id="b49bdf16-12b6-41b6-a77f-dcf28b507bf4" class="bulleted-list"><li style="list-style-type:disc">Hibernate</li></ul><ul id="59677598-6067-4b44-b4da-ca0c10fe4a30" class="bulleted-list"><li style="list-style-type:disc">Spark</li></ul><ul id="95e55d53-cd6a-4ec2-88af-6cc5ce1dc2bd" class="bulleted-list"><li style="list-style-type:square">JavaEE et interfaces (JSP, JSF, JPA, JAXs …)</li></ul></div><p id="6df7848d-6f06-4597-8ce0-878e984c8b64" class="">
-</p><h3 id="6a33f5b7-5a89-42d9-8f73-dcdbb9ecc170" class=""></h3></div><h3 id="24e118c8-3e22-427e-bd8e-a70c9c202c85" class="">Rédaction de cahiers des charges</h3><p id="606ab9da-0a06-49ac-a9fe-6eb952118b86" class="">I enjoy writing about technical subjects and I feel I can do a pretty good job about it! My motivation is explaining things in simple and practical terms and thus making things easier for others.</p><hr id="c5bab053-8236-4c49-a46f-2f5b1440188c"/><h2 id="ff47cb92-4755-4656-8fe5-d1deace3899d" class="">🗣 Langues</h2><h3 id="703b51aa-ba59-447c-9d26-33c5814f87c2" class="">🇫🇷 Français </h3><p id="817dc488-c6e7-4c7e-b00d-c4f2436507a6" class="">Langue maternelle</p><h3 id="0b8a78e2-f7de-4385-a4b4-ee152d016286" class="">🇬🇧 English </h3><p id="72ff0585-1572-456b-a5ec-31e90ec11268" class="">TOEIC 910 </p><hr id="ed38b6df-0e97-4909-adfe-0308aba88b6c"/><p id="e991df2a-ba5b-4905-b67e-daecdaf50fab" class="">
-</p></div></article></body></html>
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	@media only screen {
+		body {
+			margin: 2em auto;
+			max-width: 900px;
+			color: rgb(55, 53, 47);
+		}
+	}
+	
+	body {
+		line-height: 1.5;
+		white-space: pre-wrap;
+	}
+	
+	a,
+	a.visited {
+		color: inherit;
+		text-decoration: underline;
+	}
+	
+	.pdf-relative-link-path {
+		font-size: 80%;
+		color: #444;
+	}
+	
+	h1,
+	h2,
+	h3 {
+		letter-spacing: -0.01em;
+		line-height: 1.2;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+	
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin-top: 0;
+		margin-bottom: 0.75em;
+	}
+	
+	h1 {
+		font-size: 1.875rem;
+		margin-top: 1.875rem;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+	}
+	
+	h3 {
+		font-size: 1.25rem;
+		margin-top: 1.25rem;
+	}
+	
+	.source {
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		padding: 1.5em;
+		word-break: break-all;
+	}
+	
+	.callout {
+		border-radius: 3px;
+		padding: 1rem;
+	}
+	
+	figure {
+		margin: 1.25em 0;
+		page-break-inside: avoid;
+	}
+	
+	figcaption {
+		opacity: 0.5;
+		font-size: 85%;
+		margin-top: 0.5em;
+	}
+	
+	mark {
+		background-color: transparent;
+	}
+	
+	.indented {
+		padding-left: 1.5em;
+	}
+	
+	hr {
+		background: transparent;
+		display: block;
+		width: 100%;
+		height: 1px;
+		visibility: visible;
+		border: none;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	@media only print {
+		img {
+			max-height: 100vh;
+			object-fit: contain;
+		}
+	}
+	
+	@page {
+		margin: 1in;
+	}
+	
+	.collection-content {
+		font-size: 0.875rem;
+	}
+	
+	.column-list {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.column {
+		padding: 0 1em;
+	}
+	
+	.column:first-child {
+		padding-left: 0;
+	}
+	
+	.column:last-child {
+		padding-right: 0;
+	}
+	
+	.table_of_contents-item {
+		display: block;
+		font-size: 0.875rem;
+		line-height: 1.3;
+		padding: 0.125rem;
+	}
+	
+	.table_of_contents-indent-1 {
+		margin-left: 1.5rem;
+	}
+	
+	.table_of_contents-indent-2 {
+		margin-left: 3rem;
+	}
+	
+	.table_of_contents-indent-3 {
+		margin-left: 4.5rem;
+	}
+	
+	.table_of_contents-link {
+		text-decoration: none;
+		opacity: 0.7;
+		border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+	}
+	
+	table,
+	th,
+	td {
+		border: 1px solid rgba(55, 53, 47, 0.09);
+		border-collapse: collapse;
+	}
+	
+	table {
+		border-left: none;
+		border-right: none;
+	}
+	
+	th,
+	td {
+		font-weight: normal;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		min-height: 1.5em;
+		text-align: left;
+	}
+	
+	th {
+		color: rgba(55, 53, 47, 0.6);
+	}
+	
+	ol,
+	ul {
+		margin: 0;
+		margin-block-start: 0.6em;
+		margin-block-end: 0.6em;
+	}
+	
+	li > ol:first-child,
+	li > ul:first-child {
+		margin-block-start: 0.6em;
+	}
+	
+	ul > li {
+		list-style: disc;
+	}
+	
+	ul.to-do-list {
+		text-indent: -1.7em;
+	}
+	
+	ul.to-do-list > li {
+		list-style: none;
+	}
+	
+	.to-do-children-checked {
+		text-decoration: line-through;
+		opacity: 0.375;
+	}
+	
+	ul.toggle > li {
+		list-style: none;
+	}
+	
+	ul {
+		padding-inline-start: 1.7em;
+	}
+	
+	ul > li {
+		padding-left: 0.1em;
+	}
+	
+	ol {
+		padding-inline-start: 1.6em;
+	}
+	
+	ol > li {
+		padding-left: 0.2em;
+	}
+	
+	.mono ol {
+		padding-inline-start: 2em;
+	}
+	
+	.mono ol > li {
+		text-indent: -0.4em;
+	}
+	
+	.toggle {
+		padding-inline-start: 0em;
+		list-style-type: none;
+	}
+	
+	/* Indent toggle children */
+	.toggle > li > details {
+		padding-left: 1.7em;
+	}
+	
+	.toggle > li > details > summary {
+		margin-left: -1.1em;
+	}
+	
+	.selected-value {
+		display: inline-block;
+		padding: 0 0.5em;
+		background: rgba(206, 205, 202, 0.5);
+		border-radius: 3px;
+		margin-right: 0.5em;
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+		white-space: nowrap;
+	}
+	
+	.collection-title {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	
+	.simple-table {
+		margin-top: 1em;
+		font-size: 0.875rem;
+		empty-cells: show;
+	}
+	.simple-table td {
+		height: 29px;
+		min-width: 120px;
+	}
+	
+	.simple-table th {
+		height: 29px;
+		min-width: 120px;
+	}
+	
+	.simple-table-header-color {
+		background: rgb(247, 246, 243);
+		color: black;
+	}
+	.simple-table-header {
+		font-weight: 500;
+	}
+	
+	time {
+		opacity: 0.5;
+	}
+	
+	.icon {
+		display: inline-block;
+		max-width: 1.2em;
+		max-height: 1.2em;
+		text-decoration: none;
+		vertical-align: text-bottom;
+		margin-right: 0.5em;
+	}
+	
+	img.icon {
+		border-radius: 3px;
+	}
+	
+	.user-icon {
+		width: 1.5em;
+		height: 1.5em;
+		border-radius: 100%;
+		margin-right: 0.5rem;
+	}
+	
+	.user-icon-inner {
+		font-size: 0.8em;
+	}
+	
+	.text-icon {
+		border: 1px solid #000;
+		text-align: center;
+	}
+	
+	.page-cover-image {
+		display: block;
+		object-fit: cover;
+		width: 100%;
+		max-height: 30vh;
+	}
+	
+	.page-header-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+	
+	.page-header-icon-with-cover {
+		margin-top: -0.72em;
+		margin-left: 0.07em;
+	}
+	
+	.page-header-icon img {
+		border-radius: 3px;
+	}
+	
+	.link-to-page {
+		margin: 1em 0;
+		padding: 0;
+		border: none;
+		font-weight: 500;
+	}
+	
+	p > .user {
+		opacity: 0.5;
+	}
+	
+	td > .user,
+	td > time {
+		white-space: nowrap;
+	}
+	
+	input[type="checkbox"] {
+		transform: scale(1.5);
+		margin-right: 0.6em;
+		vertical-align: middle;
+	}
+	
+	p {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	
+	.image {
+		border: none;
+		margin: 1.5em 0;
+		padding: 0;
+		border-radius: 0;
+		text-align: center;
+	}
+	
+	.code,
+	code {
+		background: rgba(135, 131, 120, 0.15);
+		border-radius: 3px;
+		padding: 0.2em 0.4em;
+		border-radius: 3px;
+		font-size: 85%;
+		tab-size: 2;
+	}
+	
+	code {
+		color: #eb5757;
+	}
+	
+	.code {
+		padding: 1.5em 1em;
+	}
+	
+	.code-wrap {
+		white-space: pre-wrap;
+		word-break: break-all;
+	}
+	
+	.code > code {
+		background: none;
+		padding: 0;
+		font-size: 100%;
+		color: inherit;
+	}
+	
+	blockquote {
+		font-size: 1.25em;
+		margin: 1em 0;
+		padding-left: 1em;
+		border-left: 3px solid rgb(55, 53, 47);
+	}
+	
+	.bookmark {
+		text-decoration: none;
+		max-height: 8em;
+		padding: 0;
+		display: flex;
+		width: 100%;
+		align-items: stretch;
+	}
+	
+	.bookmark-title {
+		font-size: 0.85em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 1.75em;
+		white-space: nowrap;
+	}
+	
+	.bookmark-text {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.bookmark-info {
+		flex: 4 1 180px;
+		padding: 12px 14px 14px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+	.bookmark-image {
+		width: 33%;
+		flex: 1 1 180px;
+		display: block;
+		position: relative;
+		object-fit: cover;
+		border-radius: 1px;
+	}
+	
+	.bookmark-description {
+		color: rgba(55, 53, 47, 0.6);
+		font-size: 0.75em;
+		overflow: hidden;
+		max-height: 4.5em;
+		word-break: break-word;
+	}
+	
+	.bookmark-href {
+		font-size: 0.75em;
+		margin-top: 0.25em;
+	}
+	
+	.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+	.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+	.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+	.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+	.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+	.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+	.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+	.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+	.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+	.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+	.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+	.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+	.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+	.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+	.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+	.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+	.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+	.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+	.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+	.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+	.highlight-default {
+		color: rgba(55, 53, 47, 1);
+	}
+	.highlight-gray {
+		color: rgba(120, 119, 116, 1);
+		fill: rgba(120, 119, 116, 1);
+	}
+	.highlight-brown {
+		color: rgba(159, 107, 83, 1);
+		fill: rgba(159, 107, 83, 1);
+	}
+	.highlight-orange {
+		color: rgba(217, 115, 13, 1);
+		fill: rgba(217, 115, 13, 1);
+	}
+	.highlight-yellow {
+		color: rgba(203, 145, 47, 1);
+		fill: rgba(203, 145, 47, 1);
+	}
+	.highlight-teal {
+		color: rgba(68, 131, 97, 1);
+		fill: rgba(68, 131, 97, 1);
+	}
+	.highlight-blue {
+		color: rgba(51, 126, 169, 1);
+		fill: rgba(51, 126, 169, 1);
+	}
+	.highlight-purple {
+		color: rgba(144, 101, 176, 1);
+		fill: rgba(144, 101, 176, 1);
+	}
+	.highlight-pink {
+		color: rgba(193, 76, 138, 1);
+		fill: rgba(193, 76, 138, 1);
+	}
+	.highlight-red {
+		color: rgba(212, 76, 71, 1);
+		fill: rgba(212, 76, 71, 1);
+	}
+	.highlight-gray_background {
+		background: rgba(241, 241, 239, 1);
+	}
+	.highlight-brown_background {
+		background: rgba(244, 238, 238, 1);
+	}
+	.highlight-orange_background {
+		background: rgba(251, 236, 221, 1);
+	}
+	.highlight-yellow_background {
+		background: rgba(251, 243, 219, 1);
+	}
+	.highlight-teal_background {
+		background: rgba(237, 243, 236, 1);
+	}
+	.highlight-blue_background {
+		background: rgba(231, 243, 248, 1);
+	}
+	.highlight-purple_background {
+		background: rgba(244, 240, 247, 0.8);
+	}
+	.highlight-pink_background {
+		background: rgba(249, 238, 243, 0.8);
+	}
+	.highlight-red_background {
+		background: rgba(253, 235, 236, 1);
+	}
+	.block-color-default {
+		color: inherit;
+		fill: inherit;
+	}
+	.block-color-gray {
+		color: rgba(120, 119, 116, 1);
+		fill: rgba(120, 119, 116, 1);
+	}
+	.block-color-brown {
+		color: rgba(159, 107, 83, 1);
+		fill: rgba(159, 107, 83, 1);
+	}
+	.block-color-orange {
+		color: rgba(217, 115, 13, 1);
+		fill: rgba(217, 115, 13, 1);
+	}
+	.block-color-yellow {
+		color: rgba(203, 145, 47, 1);
+		fill: rgba(203, 145, 47, 1);
+	}
+	.block-color-teal {
+		color: rgba(68, 131, 97, 1);
+		fill: rgba(68, 131, 97, 1);
+	}
+	.block-color-blue {
+		color: rgba(51, 126, 169, 1);
+		fill: rgba(51, 126, 169, 1);
+	}
+	.block-color-purple {
+		color: rgba(144, 101, 176, 1);
+		fill: rgba(144, 101, 176, 1);
+	}
+	.block-color-pink {
+		color: rgba(193, 76, 138, 1);
+		fill: rgba(193, 76, 138, 1);
+	}
+	.block-color-red {
+		color: rgba(212, 76, 71, 1);
+		fill: rgba(212, 76, 71, 1);
+	}
+	.block-color-gray_background {
+		background: rgba(241, 241, 239, 1);
+	}
+	.block-color-brown_background {
+		background: rgba(244, 238, 238, 1);
+	}
+	.block-color-orange_background {
+		background: rgba(251, 236, 221, 1);
+	}
+	.block-color-yellow_background {
+		background: rgba(251, 243, 219, 1);
+	}
+	.block-color-teal_background {
+		background: rgba(237, 243, 236, 1);
+	}
+	.block-color-blue_background {
+		background: rgba(231, 243, 248, 1);
+	}
+	.block-color-purple_background {
+		background: rgba(244, 240, 247, 0.8);
+	}
+	.block-color-pink_background {
+		background: rgba(249, 238, 243, 0.8);
+	}
+	.block-color-red_background {
+		background: rgba(253, 235, 236, 1);
+	}
+	.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+	.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+	.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+	.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+	.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+	.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+	.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+	.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+	.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+	.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+	
+	.checkbox {
+		display: inline-flex;
+		vertical-align: text-bottom;
+		width: 16;
+		height: 16;
+		background-size: 16px;
+		margin-left: 2px;
+		margin-right: 5px;
+	}
+	
+	.checkbox-on {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+	
+	.checkbox-off {
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+	}
+		
+	</style></head><body><article id="8215c0e5-ba69-4863-af3e-3d3e2d5d05e3" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🧙🏽‍♂️</span></div><h1 class="page-title"><strong>Curriculum Vitæ</strong></h1></header><div class="page-body"><blockquote id="40d97753-cf85-4676-a68d-544749f8f1d8" class=""><strong>Software Engineer </strong>basé à <strong>Paris </strong>🗼 
+	Actuellement en dernière année à l’<strong>É</strong>cole <strong>S</strong>upérieure d’<strong>I</strong>ngénieurs <strong>P</strong>aris-<strong>E</strong>st  
+	Formation ingénieur informatique - option développement logiciel.</blockquote><h1 id="1a2affd1-4ce0-4eae-9f81-30f48a4df91b" class="">☎️ Informations de contact</h1><p id="b516f84f-19e6-4ada-af62-8f4bfb7ec246" class="">📧 guillemaudyann@gmail.com</p><p id="3226d2e9-15b3-4488-b32b-6f8fc24fdadb" class="">🔗 <a href="https://www.linkedin.com/in/yannguillemaud/">https://www.linkedin.com/in/yannguillemaud/</a></p><p id="315a4371-29a9-4630-a834-c128ef48664b" class="">
+	</p><hr id="ed3c38aa-5ab0-405c-811a-6f92523c13a9"/><h1 id="a794fa28-4397-4dba-a91b-c69394a9df8a" class="">🎓 Diplômes</h1><h2 id="d8e13c34-6681-4d1c-9961-6cac53f5c6cc" class="">Diplôme d’Ingénieur Informatique - Spé Logiciel</h2><p id="9f7ec741-277d-4c0a-9d85-6eeb681dc590" class=""><em><mark class="highlight-gray">ESIPE - Marne-la-Vallée, 2019-2022</mark></em></p><h2 id="2dabd82d-11bd-42b9-8ace-f87ab5f618ff" class="">Diplôme Universitaire Technologique Informatique</h2><p id="39888909-5402-4b42-9672-1e2e21534ced" class=""><em><mark class="highlight-gray">Université de Bourgogne - Dijon, 2017-2019</mark></em></p><h2 id="9bceb9cc-e235-4725-bd35-5579a42ed0a7" class="">Baccalauréat STI2D - Systèmes Informatiques et Numériques</h2><p id="4280ab3c-a8e5-4631-95ad-43aada5b61d2" class=""><em><mark class="highlight-gray">Saint Joseph - Dijon, 2015-2017</mark></em></p><hr id="2a2ff900-39cb-434c-abab-6201a0a6fe13"/><h1 id="5ba68570-560d-4825-ad64-3891680a46d1" class="">🧑🏻‍🎓<strong> Expérience professionnelle</strong></h1><h2 id="42c7c9fd-08fe-4bd6-90ba-082c5de0ede5" class=""><details open=""><summary>Apprenti Ingénieur Développement</summary></details></h2><div class="indented"><p id="4f299125-8119-400c-a933-6b9e0b9f92f4" class=""><mark class="highlight-gray"><strong><em>Infocube</em></strong></mark><mark class="highlight-gray"><em>, Paris – (Sept 2019 - En cours)</em></mark></p><p id="263c8236-c978-4f40-84eb-54246129b403" class="">Alternance effectuée dans le cadre de mon diplôme d&#x27;ingénieur informatique.</p><p id="2e1ad3cb-0cf8-4336-9d81-6141a5b11aca" class="">Réalisation des missions suivantes:</p><ul id="5f21274e-d1aa-4f8f-9e03-e7ff694e0389" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">Refonte des applications de l&#x27;entreprise</mark></li></ul><ul id="cd713186-4974-4768-abb3-b9dc030a0a49" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">Modification des sites clients</mark></li></ul><ul id="218867a8-689b-4700-93eb-4f9efce2013e" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">Automatisation des process internes (ticketing, support)</mark></li></ul><p id="11730b02-abcc-4b04-8c89-4378e9682dd4" class="">Environnements, frameworks, langages utilisés:</p><ul id="94c91627-8843-4909-a31f-71e372c9869b" class="bulleted-list"><li style="list-style-type:disc">.NET - C#, EntityFramework</li></ul><ul id="c93b9918-ba5b-44cc-901b-8ce8d848bddc" class="bulleted-list"><li style="list-style-type:disc">Microsoft SQL Server</li></ul><ul id="9fa5b97d-a8cf-4035-971e-1b8d2ce01f92" class="bulleted-list"><li style="list-style-type:disc">Node - JavaScript</li></ul><ul id="e137f962-0605-482d-b174-5e356b9b3525" class="bulleted-list"><li style="list-style-type:disc">WordPress - PHP</li></ul><ul id="15161fbc-799e-4135-99d8-4d19d1fa2fe1" class="bulleted-list"><li style="list-style-type:disc">AzureDevOps, PowerAutomate, PowerApp</li></ul></div><h2 id="ef2ff909-b79f-40d0-9cac-cf874aaedefd" class=""><details open=""><summary>Stagiaire développeur</summary></details></h2><div class="indented"><p id="59181dd0-a874-4c96-9d2f-27664db32d48" class=""><strong><mark class="highlight-gray"><em>CIAD Lab</em></mark></strong><mark class="highlight-gray"><em>, Dijon – (Mars 2019 - Juin 2019)</em></mark></p><p id="684a00a3-7742-4b1f-855d-126262976620" class="">Stage réalisé dans le cadre de mon DUT Informatique à Dijon en tant que développeur dans le CIAD, laboratoire de <strong>C</strong>onnaissances et <strong>I</strong>ntelligences <strong>A</strong>rtificielles <strong>D</strong>istribuées.</p><ul id="c2b98ce0-31b2-411c-8cac-7affed2b8929" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">Conception et développement d&#x27;une application web permettant le requêtage graphique de données sur des ontologies.</mark></li></ul><p id="59b113f3-31a3-40f6-8d3c-0f7a2230ce43" class="">Environnements, frameworks, langages utilisés:</p><ul id="f95c9938-f615-4a43-b89c-5cdccadc0150" class="bulleted-list"><li style="list-style-type:disc">Node, Angular, JavaScript &amp; TypeScript</li></ul><ul id="d5b94236-8624-4b71-8c60-beeaa3544f9e" class="bulleted-list"><li style="list-style-type:disc">SPARQL</li></ul><ul id="45d5bada-970b-409c-ac70-2067ceda1268" class="bulleted-list"><li style="list-style-type:disc">Swagger</li></ul></div><hr id="b7b591bf-9d8b-4a51-a107-2e2208fc9b20"/><h1 id="029169e3-5241-4a3e-afb0-0fcf3441c20c" class="">🛠 Compétences</h1><p id="e01f9400-1379-458d-9b94-51f66119377f" class="">Liste non exhaustive, évidemment. :) </p><h2 id="50025bdd-4534-472f-bdfd-93c9d5b43346" class=""><details open=""><summary>💻 Langages</summary></details></h2><div class="indented"><h3 id="d7a1a0de-78d6-445c-aafc-087a14d712ed" class=""><details open=""><summary>Java</summary></details></h3><div class="indented"><p id="d7d08706-d955-46b6-8c2c-2703ce4a91de" class="">Langage de prédilection: appris et utilisé depuis mes débuts en informatique, c’est par ce langage qu’une majorité de mes connaissances en développement logiciel ont été assimilées:</p><ul id="e032ff54-6829-4d76-b4bb-11a16776f13f" class="bulleted-list"><li style="list-style-type:square">Conception Orientée Objet et Design Patterns, </li></ul><ul id="3ce98931-c50f-4f5c-b1b9-bb1fb79d8b75" class="bulleted-list"><li style="list-style-type:disc">Généricité,</li></ul><ul id="a1e3876b-c1ea-4442-8527-e78ef195f17c" class="bulleted-list"><li style="list-style-type:disc">Bytecode, Reflection, Build-time</li></ul><ul id="f0f65e4a-b717-4012-9385-71a9856a07a9" class="bulleted-list"><li style="list-style-type:disc">Concurrence / Parallelisme / Vectorisation </li></ul><ul id="ca52e0d8-9acd-4276-a7a2-8271d0b85d4b" class="bulleted-list"><li style="list-style-type:disc">Memory Model et Générations</li></ul><ul id="25591c0d-9c67-4ccd-9daf-2e0d85eb2e6b" class="bulleted-list"><li style="list-style-type:disc">Concepts SOLID &amp; ACID</li></ul></div><h3 id="26473645-632f-463d-b7eb-846c26f42276" class=""><details open=""><summary>JVM</summary></details></h3><div class="indented"><ul id="3ec938a0-00ba-4591-8f65-ac86eca59e02" class="bulleted-list"><li style="list-style-type:square">Scala</li></ul><ul id="4eba1e33-7fe8-49ba-a50a-c98bea01a933" class="bulleted-list"><li style="list-style-type:disc">Kotlin</li></ul></div><h3 id="72635944-827c-4625-8942-9e360778fe48" class=""><details open=""><summary>Et d’autres encore</summary></details></h3><div class="indented"><ul id="0fb2c625-db66-4ff5-bfe0-e974b04dfa54" class="bulleted-list"><li style="list-style-type:square">C, C#, C++</li></ul><ul id="b859107e-3117-474b-8f1c-4917a48c8cd9" class="bulleted-list"><li style="list-style-type:disc">Python</li></ul><ul id="31cba4db-57b6-46c0-bd02-f3128f1ff0fe" class="bulleted-list"><li style="list-style-type:disc">HTML, CSS, JavaScript, TypeScript, PHP</li></ul><ul id="8c372506-5451-4c03-844a-44671b593404" class="bulleted-list"><li style="list-style-type:disc">SQL</li></ul><ul id="588410df-dcc3-4da8-a3a3-70e3c0e86de1" class="bulleted-list"><li style="list-style-type:disc">Bash</li></ul></div></div><h2 id="e0a45dc1-5db5-4c62-9870-cd7fe903af9e" class=""><details open=""><summary>📦 Frameworks</summary></details></h2><div class="indented"><h3 id="64cc5448-0ccc-4f9b-81ea-7850c3990fba" class=""><details open=""><summary>Utilisés avec les langages JVM</summary></details></h3><div class="indented"><ul id="7b8ad03e-f351-4b2d-908b-2e720d010480" class="bulleted-list"><li style="list-style-type:square">Quarkus, Spring</li></ul><ul id="c19ed8b4-a7eb-4ddc-9750-44e68878e3ca" class="bulleted-list"><li style="list-style-type:disc">Kafka, RabbitMQ</li></ul><ul id="1ddc6e91-f2e4-4b5d-85ac-0a5cde08eec4" class="bulleted-list"><li style="list-style-type:disc">Spark, Hadoop</li></ul><ul id="ab900f9b-453d-47e9-84e9-12fad2e9a102" class="bulleted-list"><li style="list-style-type:disc">Maven, ANT</li></ul><ul id="a07388de-a5f9-4091-ac5a-58133070de69" class="bulleted-list"><li style="list-style-type:disc">Hibernate</li></ul><ul id="0ce3c563-0b91-4ad3-97be-5b9b161e0a06" class="bulleted-list"><li style="list-style-type:disc">JEE &amp; co</li></ul><ul id="b17c7c29-be45-429d-8767-4973ff2220a0" class="bulleted-list"><li style="list-style-type:disc">Travis, Jenkins</li></ul></div><h3 id="256df9f5-0198-48f4-bbfb-ea6210731443" class=""><details open=""><summary>Autres plateformes</summary></details></h3><div class="indented"><ul id="29234f35-d77b-46ab-bf71-05e257994373" class="bulleted-list"><li style="list-style-type:square">LINQ</li></ul><ul id="6539475d-9618-44a0-957d-9f9652b68685" class="bulleted-list"><li style="list-style-type:disc">EntityFramework</li></ul></div><h3 id="f00a6342-88cc-461d-8f3c-8f5c30f4eed7" class=""><details open=""><summary>Web</summary></details></h3><div class="indented"><ul id="725deaa6-40fc-424f-aae4-4856f13ad03c" class="bulleted-list"><li style="list-style-type:square">Angular, React, Vue, Svelte, Wordpress</li></ul></div></div><h2 id="c5f9fe94-a1a8-4117-bde2-2d2a5d7f033b" class=""><details open=""><summary>🗃️ SGBD</summary></details></h2><div class="indented"><h3 id="eb630cf3-ee25-4c5f-ae38-6bb37964ccab" class=""><details open=""><summary>SQL</summary></details></h3><div class="indented"><ul id="fd5569be-847a-460e-ba72-b6f4aa7ae513" class="bulleted-list"><li style="list-style-type:disc">Oracle, SQL Server</li></ul><ul id="3fced463-19ea-42d3-9e22-5de3d9ea359f" class="bulleted-list"><li style="list-style-type:disc">MySQL, PostgreSQL, MariaDB</li></ul><ul id="ff942500-383b-4c9b-8153-1110b6cb44a8" class="bulleted-list"><li style="list-style-type:disc">H2</li></ul></div><h3 id="0dfc44aa-2b4c-4034-ae0a-aca67aeecf41" class=""><details open=""><summary>NoSQL</summary></details></h3><div class="indented"><ul id="5d2179dc-0b6b-46dc-aac8-77356ae1ca82" class="bulleted-list"><li style="list-style-type:disc">Cassandra, Redis, MongoDB, HBase</li></ul></div></div><p id="606ab9da-0a06-49ac-a9fe-6eb952118b86" class="">
+	</p><hr id="c5bab053-8236-4c49-a46f-2f5b1440188c"/><h2 id="ff47cb92-4755-4656-8fe5-d1deace3899d" class="">🗣 Langues</h2><h3 id="703b51aa-ba59-447c-9d26-33c5814f87c2" class="">🇫🇷 Français </h3><p id="817dc488-c6e7-4c7e-b00d-c4f2436507a6" class="">Langue maternelle</p><h3 id="0b8a78e2-f7de-4385-a4b4-ee152d016286" class="">🇬🇧 English </h3><p id="72ff0585-1572-456b-a5ec-31e90ec11268" class="">TOEIC 910 </p><hr id="ed38b6df-0e97-4909-adfe-0308aba88b6c"/><p id="e991df2a-ba5b-4905-b67e-daecdaf50fab" class="">
+	</p></div></article></body></html>
